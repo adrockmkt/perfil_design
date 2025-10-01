@@ -8,13 +8,13 @@ interface ProfileCardProps {
 
 export default function ProfileCard({ variant }: ProfileCardProps) {
   return (
-    <div className="w-[440px] bg-white rounded-[32px] shadow-lg overflow-hidden">
+    <div className="w-[440px] bg-white rounded-[32px] shadow-lg overflow-visible">
       {/* Header Section with Background Image */}
-      <div className="relative h-[240px] bg-sky-400 overflow-hidden">
+      <div className="relative h-[240px] bg-sky-400 overflow-visible rounded-t-[32px]">
         <img
           src={fundoTopoImg}
           alt="Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-t-[32px]"
         />
 
         {/* Follow Button */}
