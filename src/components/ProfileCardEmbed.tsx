@@ -2,11 +2,11 @@ import { Instagram, Linkedin, Plus } from 'lucide-react';
 import avatarImg from '../assets/avatar.png';
 import fundoTopoImg from '../assets/fundo_topo.jpg';
 
-interface ProfileCardProps {
+interface ProfileCardEmbedProps {
   variant: 'withExpBar' | 'withColorRing';
 }
 
-export default function ProfileCard({ variant }: ProfileCardProps) {
+export default function ProfileCardEmbed({ variant }: ProfileCardEmbedProps) {
   return (
     <div className="w-[440px] bg-white rounded-[32px] shadow-lg overflow-visible">
       {/* Header Section with Background Image */}
@@ -40,7 +40,6 @@ export default function ProfileCard({ variant }: ProfileCardProps) {
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Content Section */}
