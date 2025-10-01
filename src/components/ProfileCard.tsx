@@ -18,7 +18,7 @@ export default function ProfileCard({ variant }: ProfileCardProps) {
         />
 
         {/* Follow Button */}
-        <button className="absolute top-6 right-6 px-6 py-2.5 bg-white/90 backdrop-blur-sm rounded-full font-medium text-gray-900 hover:bg-gray-100 transition-all shadow-sm flex items-center gap-2">
+        <button className="absolute top-6 right-6 px-6 py-2.5 bg-white/90 backdrop-blur-sm rounded-full font-medium text-gray-900 hover:bg-white transition-all shadow-sm flex items-center gap-2">
           {variant === 'withExpBar' ? (
             <>
               Follow <Plus size={18} />
@@ -29,7 +29,7 @@ export default function ProfileCard({ variant }: ProfileCardProps) {
         </button>
 
         {/* Profile Image */}
-        <div className="absolute -bottom-16 left-8">
+        <div className="absolute -bottom-16 left-8 z-10">
           <div className={`relative ${variant === 'withColorRing' ? 'p-1 bg-gradient-to-br from-purple-500 via-green-400 to-orange-400 rounded-full' : ''}`}>
             <div className="w-32 h-32 rounded-full border-[6px] border-white shadow-xl overflow-hidden bg-white">
               <img
