@@ -8,7 +8,7 @@ interface ProfileCardEmbedProps {
 
 export default function ProfileCardEmbed({ variant }: ProfileCardEmbedProps) {
   return (
-    <div className="w-[440px] bg-white rounded-[32px] shadow-lg overflow-visible">
+    <div className="w-full max-w-[440px] bg-white rounded-[32px] shadow-lg overflow-visible">
       {/* Header Section with Background Image */}
       <div className="relative h-[240px] bg-sky-400 overflow-visible rounded-t-[32px]">
         <img
